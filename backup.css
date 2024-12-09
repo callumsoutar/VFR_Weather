@@ -105,3 +105,10 @@ body {
     }
 }
 
+/* Hide zoom buttons on mobile */
+@media screen and (max-width: 768px) {
+    .leaflet-control-zoom {
+        display: none;
+    }
+}
+
