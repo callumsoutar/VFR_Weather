@@ -1,0 +1,96 @@
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Style for the legend */
+.info.legend {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.info.legend i {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.info.legend br {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1a1a1a;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+/* No more map-title, it's removed */
+
+/* Legend title styling */
+.info.legend b {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style for the legend's categories */
+.info.legend i {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1a1a1a;
+}
+
+/* Hide title on mobile */
+@media screen and (max-width: 768px) {
+    .map-title {
+        display: none;
+    }
+}
+
+/* Ensure the 'metar-display' div is visible on desktop */
+#metar-display {
+    position: absolute;
+    top: 25px; /* Move it down 20px */
+    left: 10px;
+    font-size: 14px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Hide 'metar-display' on mobile devices */
+@media (max-width: 768px) {
+    #metar-display {
+        display: none;
+    }
+}
+
